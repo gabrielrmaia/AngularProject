@@ -1,0 +1,25 @@
+<h1 *ngIf="!changeInfo" mat-dialog-title>Crie um cadastro</h1><!--Quando a var for false aparece as config de criação-->
+<h1 *ngIf="changeInfo" mat-dialog-title>Edite um cadastro</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>ID do Funcionário</mat-label>
+    <input matInput [(ngModel)]="data.position">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Job</mat-label>
+    <input matInput [(ngModel)]="data.job">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label >Age</mat-label>
+    <input color="" matInput [(ngModel)]="data.age">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button *ngIf="!changeInfo" [mat-dialog-close]="data" cdkFocusInitial>Create</button>
+  <button mat-button *ngIf="changeInfo" [mat-dialog-close]="data" cdkFocusInitial>Edit</button>
+</div> 

@@ -1,0 +1,7 @@
+{
+    "registers":[
+        { "position": 1, "name": "Sesisnando Lagos", "job": "Desenvolvedor FullStack", "age":25 },
+        { "position": 2, "name": "Gabriel Maia", "job": "Estagiário de Desenvolvimento", "age":19 },
+        { "position": 3, "name": "Sesisnando Lagos", "job": "Desenvolvedor FullStack", "age":25 }
+    ]
+}
